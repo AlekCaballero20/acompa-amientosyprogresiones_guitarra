@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Énfasis en Imágenes y Videos</title>
+    <style>
+        /* Estilos generales del cuerpo */
+        body {
+            font-family: 'Roboto', Arial, sans-serif; /* Fuente principal */
+            background-color: #F9F9F9; /* Color de fondo (Blanco Debussy) */
+            margin: 20px; /* Margen alrededor del contenido */
+            padding: 0; /* Sin relleno adicional */
+        }
+
+        /* Título principal */
+        h1 {
+            text-align: center; /* Centrar el texto */
+            color: #220A63; /* Color del título (Azul Bach) */
+            margin-bottom: 60px; /* Espacio debajo del título */
+            font-weight: 700; /* Negrita */
+            font-size: 24px; /* Tamaño de fuente del título */
+        }
+
+        /* Estilos para el logo */
+        .logo {
+            position: absolute; /* Fijar el logo en un lugar específico */
+            top: 15px; /* Distancia desde la parte superior de la página */
+            right: 20px; /* Distancia desde el lado derecho */
+            width: 140px; /* Ancho del logo */
+            height: auto; /* Ajustar altura automáticamente */
+        }
+
+        /* Tabla principal */
+        table {
+            width: 100%; /* Tabla ocupa todo el ancho disponible */
+            border-collapse: collapse; /* Combinar bordes de las celdas */
+            margin: 60px 0; /* Espaciado superior e inferior */
+            font-size: 16px; /* Tamaño de fuente dentro de la tabla */
+            background-color: #FFF; /* Fondo blanco */
+            border: 1px solid #DDD; /* Bordes de la tabla */
+            border-radius: 5px; /* Bordes redondeados */
+            overflow: hidden; /* Evitar que elementos sobresalgan */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra para la tabla */
+        }
+
+        /* Encabezados de la tabla */
+        th {
+            background-color: #0C41C4; /* Color de fondo de los encabezados (Azul Mozart) */
+            color: white; /* Color del texto */
+            font-size: 18px; /* Tamaño de fuente de los encabezados */
+            font-weight: 700; /* Texto en negrita */
+            padding: 10px; /* Espaciado dentro de cada celda */
+        }
+
+        /* Filas alternas */
+        tr:nth-child(even) {
+            background-color: #E6E8E8; /* Color para filas pares (Gris Haydn) */
+        }
+
+        /* Estilos para las celdas */
+        td {
+            padding: 10px; /* Espaciado dentro de las celdas */
+            border: 1px solid #DDD; /* Bordes de las celdas */
+            text-align: center; /* Centrar el contenido horizontalmente */
+            vertical-align: middle; /* Centrar verticalmente */
+        }
+
+        /* Ajustes específicos para imágenes de acompañamientos */
+        .accompaniment-image {
+            width: 100%; /* Imagen ocupa todo el ancho disponible */
+            max-width: 120px; /* Ajusta el ancho máximo */
+            height: auto; /* Mantener proporción */
+        }
+
+        /* Ajustes específicos para imágenes de acordes */
+        .chord-images {
+            display: flex; /* Usar flexbox para organizar imágenes */
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+            gap: 10px; /* Espaciado entre imágenes */
+            flex-wrap: nowrap; /* Evitar que las imágenes se vayan a otra fila */
+        }
+        .chord-images img {
+            max-width: 90px; /* Ajustar ancho máximo */
+            height: auto; /* Mantener proporción */
+        }
+
+        /* Ajustes de los videos */
+        iframe {
+            width: 100%; /* Ocupa todo el ancho disponible */
+            max-width: 500px; /* Ancho máximo permitido */
+            height: 280px; /* Altura fija */
+        }
+
+        /* Texto dentro de las celdas */
+        .text-cell {
+            font-size: 16px; /* Tamaño de fuente para texto dentro de celdas */
+            color: #555; /* Color del texto (Gris Tchaikovsky) */
+        }
+
+        /* Géneros con texto más pequeño */
+        .genres-cell {
+            font-size: 14px; /* Texto más pequeño para géneros */
+            color: #777; /* Color gris más tenue */
+        }
+    </style>
+</head>
+<body>
+    <!-- Título de la página -->
+    <h1>Tabla de Acompañamientos y Progresiones</h1>
+
+    <!-- Logo ubicado en la esquina superior derecha -->
+    <img class="logo" src="https://static.wixstatic.com/media/85afce_3adb3865c88a492b93a8bf2dc69049c3~mv2.png" alt="Logo Musicala">
+
+    <!-- Tabla de contenido -->
+    <table>
+        <thead>
+            <tr>
+                <th>Acompañamientos</th>
+                <th>Progresiones</th>
+                <th>Acordes</th>
+                <th>Video</th>
+                <th>Géneros</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Primera fila -->
+            <tr>
+                <td><img class="accompaniment-image" src="https://static.wixstatic.com/media/85afce_372beba3840241548ae9565d437974db~mv2.png" alt="Ejercicio 1"></td>
+                <td class="text-cell">Lam - Mi</td>
+                <td class="chord-images">
+                    <img src="https://static.wixstatic.com/media/85afce_6d0afb9bfccc46868fd7d2d38ae969a9~mv2.jpg" alt="La menor">
+                    <img src="https://static.wixstatic.com/media/85afce_afbe4bc1efb042d2bff3effc7b2541ff~mv2.jpg" alt="Mi mayor">
+                </td>
+                <td>
+                    <iframe src="https://www.youtube.com/embed/Y5WzSIxavhY" allowfullscreen></iframe>
+                </td>
+                <td class="genres-cell">Pop, Rock, Reggae</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
