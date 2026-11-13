@@ -47,3 +47,7 @@ data/source-audit.json
 manifest.webmanifest
 sw.js
 ```
+
+## Actividad de bajo
+
+- [Las mañanitas en bajo](./las-mananitas-bajo/index.html)
