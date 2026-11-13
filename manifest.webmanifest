@@ -1,0 +1,16 @@
+{
+  "name": "Musicala Practice · Guitarra",
+  "short_name": "Musicala Guitar",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#110a24",
+  "theme_color": "#110a24",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

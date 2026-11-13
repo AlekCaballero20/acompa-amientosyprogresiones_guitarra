@@ -1,217 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acompañamientos y progresiones para Guitarra</title>
-    <style>
-        /* Estilos generales del cuerpo */
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            background-color: #F9F9F9;
-            margin: 20px;
-            padding: 0;
-        }
-
-        /* Título principal */
-        h1 {
-            text-align: center;
-            color: #220A63;
-            margin-bottom: 60px;
-            font-weight: 700;
-            font-size: 30px;
-        }
-
-        /* Estilos para el logo */
-        .logo {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            width: 150px;
-            height: auto;
-        }
-
-        /* Contenedor de la tabla con scroll */
-        .table-container {
-            position: relative;
-        }
-
-        /* Barra de desplazamiento visible en la parte superior */
-        .scroll-bar {
-            position: sticky;
-            top: 0;
-            background-color: #F9F9F9;
-            padding: 5px 0;
-            z-index: 10;
-            overflow-x: auto;
-            border-bottom: 2px solid #DDD;
-        }
-
-        .scroll-bar::-webkit-scrollbar {
-            height: 8px;
-        }
-
-        .scroll-bar::-webkit-scrollbar-thumb {
-            background-color: #CCC;
-            border-radius: 10px;
-        }
-
-        .scroll-bar::-webkit-scrollbar-track {
-            background-color: #EEE;
-        }
-
-        /* Tabla principal */
-        table {
-            width: 120%;
-            border-collapse: collapse;
-            margin: 0;
-            font-size: 16px;
-            background-color: #FFF;
-            border: 1px solid #DDD;
-            border-radius: 5px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Encabezados de la tabla */
-        th {
-            background-color: #0C41C4;
-            color: white;
-            font-size: 18px;
-            font-weight: 700;
-            padding: 10px;
-        }
-
-        /* Filas alternas */
-        tr:nth-child(even) {
-            background-color: #E6E8E8;
-        }
-
-        /* Estilos para las celdas */
-        td {
-            padding: 10px;
-            border: 1px solid #DDD;
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        /* Ajustes específicos para las imágenes de acompañamientos */
-        .accompaniment-image {
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-        }
-
-        /* Ajustes específicos para las imágenes de acordes */
-        .chord-images {
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-        }
-        .chord-images img {
-            width: 100%;
-            max-width: 120px;
-            height: auto;
-        }
-
-        /* Ajustes de los videos */
-        iframe {
-            width: 100%;
-            max-width: 500px;
-            height: 200px;
-        }
-
-        /* Texto dentro de las celdas */
-        .text-cell {
-            font-size: 16px;
-            color: #555;
-        }
-
-        /* Géneros con texto más pequeño */
-        .genres-cell {
-            font-size: 16px;
-            color: #777;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#110a24" />
+  <meta name="description" content="Biblioteca interactiva de acompañamientos y progresiones para guitarra de Musicala." />
+  <title>Musicala Practice · Guitarra</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Título de la página -->
-    <h1>Tabla de Acompañamientos y Progresiones</h1>
-
-    <!-- Logo ubicado en la esquina superior derecha -->
-    <img class="logo" src="https://static.wixstatic.com/media/85afce_3adb3865c88a492b93a8bf2dc69049c3~mv2.png" alt="Logo Musicala">
-
-    <!-- Contenedor de la tabla con barra de desplazamiento horizontal -->
-    <div class="table-container">
-        <div class="scroll-bar">
-            <div style="width: 120%; height: 1px;"></div>
-        </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Acompañamientos</th>
-                    <th>Progresiones</th>
-                    <th>Acordes</th>
-                    <th>Video</th>
-                    <th>Géneros</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Primera fila -->
-                <tr>
-                    <td><img class="accompaniment-image" src="https://static.wixstatic.com/media/85afce_372beba3840241548ae9565d437974db~mv2.png" alt="Ejercicio 1"></td>
-                    <td class="text-cell">Lam - Mi</td>
-                    <td class="chord-images">
-                        <img src="https://static.wixstatic.com/media/85afce_6d0afb9bfccc46868fd7d2d38ae969a9~mv2.jpg" alt="La menor">
-                        <img src="https://static.wixstatic.com/media/85afce_afbe4bc1efb042d2bff3effc7b2541ff~mv2.jpg" alt="Mi mayor">
-                    </td>
-                    <td>
-                        <iframe src="https://www.youtube.com/embed/Y5WzSIxavhY" allowfullscreen></iframe>
-                    </td>
-                    <td class="genres-cell">Pop, Rock, Reggae</td>
-                </tr>
-                <!-- Segunda fila -->
-                <tr>
-                    <td><img class="accompaniment-image" src="https://static.wixstatic.com/media/85afce_7d8aa55bc9a346bf859ae8ae22921f2e~mv2.png" alt="Ejercicio 2"></td>
-                    <td class="text-cell">Lam - Do</td>
-                    <td class="chord-images">
-                        <img src="https://static.wixstatic.com/media/85afce_6d0afb9bfccc46868fd7d2d38ae969a9~mv2.jpg" alt="La menor">
-                        <img src="https://static.wixstatic.com/media/85afce_55af895470134bf4bb021afe3d955322~mv2.jpg" alt="Do mayor">
-                    </td>
-                    <td>
-                        <iframe src="https://www.youtube.com/embed/j-BxRlz8CPI" allowfullscreen></iframe>
-                    </td>
-                    <td class="genres-cell">Pop, Rock</td>
-                </tr>
-                <!-- Tercera fila -->
-                <tr>
-                    <td><img class="accompaniment-image" src="https://static.wixstatic.com/media/85afce_010fb40b6ea046c689c3b9a9c5b8e4a6~mv2.png" alt="Ejercicio 3"></td>
-                    <td class="text-cell">Lam - Do - Lam - Mi</td>
-                    <td class="chord-images">
-                        <img src="https://static.wixstatic.com/media/85afce_6d0afb9bfccc46868fd7d2d38ae969a9~mv2.jpg" alt="La menor">
-                        <img src="https://static.wixstatic.com/media/85afce_55af895470134bf4bb021afe3d955322~mv2.jpg" alt="Do mayor">
-                        <img src="https://static.wixstatic.com/media/85afce_afbe4bc1efb042d2bff3effc7b2541ff~mv2.jpg" alt="Mi mayor">
-                    </td>
-                    <td>
-                        <iframe src="https://www.youtube.com/embed/1PV1atO5ux8" allowfullscreen></iframe>
-                    </td>
-                    <td class="genres-cell">Pop, Rock</td>
-                </tr>
-                <!-- Cuarta fila -->
-                <tr>
-                    <td><img class="accompaniment-image" src="https://static.wixstatic.com/media/85afce_a74d8548b94a45e9865509b8214fa81e~mv2.png" alt="Ejercicio 4"></td>
-                    <td class="text-cell">Lam - Do - Mi</td>
-                    <td class="chord-images">
-                        <img src="https://static.wixstatic.com/media/85afce_6d0afb9bfccc46868fd7d2d38ae969a9~mv2.jpg" alt="La menor">
-                        <img src="https://static.wixstatic.com/media/85afce_55af895470134bf4bb021afe3d955322~mv2.jpg" alt="Do mayor">
-                        <img src="https://static.wixstatic.com/media/85afce_afbe4bc1efb042d2bff3effc7b2541ff~mv2.jpg" alt="Mi mayor">
-                    </td>
-                    <td>
-                        <iframe src="https://www.youtube.com/embed/czLXuuYvM84" allowfullscreen></iframe>
-                    </td>
-                    <td class="genres-cell">Reggae, Marcha, Reggaeton</td>
-                </tr>
-            </tbody>
-        </table>
+  <header class="topbar shell">
+    <a class="brand" href="#top" aria-label="Musicala Practice">
+      <img class="brand-logo dark-only" src="assets/logo-musicala-white.png" alt="Musicala - vida, alma y música" width="170" height="52">
+      <img class="brand-logo light-only" src="assets/logo-musicala.png" alt="Musicala - vida, alma y música" width="170" height="52">
+      <span class="brand-badge">Guitarra</span>
+    </a>
+    <div class="topbar-actions">
+      <button id="themeBtn" class="icon-btn theme-toggle" type="button" aria-label="Cambiar modo claro / oscuro" title="Cambiar tema">
+        <span class="theme-icon">☼</span>
+      </button>
     </div>
+  </header>
+
+  <main id="top" class="shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Práctica de guitarra</p>
+        <h1>Acompañamientos<br><span>y progresiones</span></h1>
+        <p>Practica rasgueos, arpegios y cambios de acorde con partituras y un metrónomo interactivo.</p>
+        <div class="hero-actions">
+          <button class="primary" id="continueBtn">
+            <span>Continuar práctica</span>
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+          <a class="secondary" href="#biblioteca">Explorar biblioteca</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="fretboard"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Resumen de progreso">
+      <article><span id="statProgress">0%</span><small>Progreso</small><div class="bar"><i id="progressBar"></i></div></article>
+      <article><span id="statDone">0</span><small>Practicados</small></article>
+      <article><span id="statFav">0</span><small>Favoritos</small></article>
+      <article><span id="statTotal">37</span><small>Ejercicios</small></article>
+    </section>
+
+    <section id="biblioteca" class="library">
+      <div class="section-head"><div><h2>Biblioteca de ejercicios</h2></div><span id="resultCount" class="result-count"></span></div>
+      <div class="filters">
+        <label class="search"><span aria-hidden="true">⌕</span><input aria-label="Buscar ejercicios" id="searchInput" type="search" placeholder="Buscar acorde, género o número…" autocomplete="off"></label>
+        <select id="genreFilter" aria-label="Filtrar por género"><option value="">Todos los estilos</option></select>
+        <select id="statusFilter" aria-label="Filtrar por estado"><option value="">Todo el progreso</option><option value="pending">Pendientes</option><option value="done">Practicados</option><option value="favorite">Favoritos</option><option value="video">Con video</option></select>
+      </div>
+      <div id="cards" class="cards"></div>
+      <div id="emptyState" class="empty" hidden><h3>No hay ejercicios con esos filtros</h3><p>Prueba otra búsqueda o cambia los filtros.</p></div>
+    </section>
+  </main>
+
+  <footer class="shell footer"><span>Musicala Practice · Guitarra</span><small>La numeración conserva el material original. El archivo fuente no contiene ejercicio 30.</small></footer>
+
+  <dialog id="exerciseDialog" class="exercise-dialog" aria-labelledby="exerciseTitle">
+    <div class="dialog-inner">
+      <button id="closeDialog" class="dialog-close" aria-label="Cerrar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button>
+      <div id="dialogContent"></div>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
