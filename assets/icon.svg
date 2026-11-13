@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="musicalaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0084FF"/>
+      <stop offset="50%" stop-color="#6C35DE"/>
+      <stop offset="100%" stop-color="#E81876"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#180C3C"/>
+      <stop offset="100%" stop-color="#0A0518"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  <rect width="512" height="512" rx="128" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="6"/>
+  <!-- Musicala ribbon wave stylized vector -->
+  <path d="M96 170 C96 260, 155 310, 195 240 C225 185, 245 105, 275 140 C305 175, 335 305, 385 270 C415 250, 440 180, 450 170" fill="none" stroke="url(#musicalaGrad)" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
